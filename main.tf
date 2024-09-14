@@ -38,6 +38,7 @@ output "instance_ip" {
     value = google_compute_instance.be_instance.network_interface[0].access_config[0].nat_ip
 }
 
+
 variable "credentials" {
     type = string
     description = "This crednetials is the best thing after sliced bread"
