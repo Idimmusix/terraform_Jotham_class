@@ -33,13 +33,3 @@ resource "google_compute_instance" "be_instance" {
   }
 
 }
-
-output "instance_ip" {
-    value = google_compute_instance.be_instance.network_interface[0].access_config[0].nat_ip
-}
-
-variable "credentials" {
-    type = string
-    description = "This crednetials is the best thing after sliced bread"
-    default = "C:\\Users\\MR DEJI\\idimma\\jotham\\terraform\\jotham-class-7-8fa445ebbd11.json"
-}
